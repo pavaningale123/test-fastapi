@@ -8,7 +8,9 @@
 
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-import models, schema, curd
+import models
+import schema
+import curd
 from database import SessionLocal, engine, Base
 from typing import List
 
