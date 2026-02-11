@@ -5,9 +5,9 @@
 # Makes it easier to debug and extend
 
 from sqlalchemy import Column, Integer, String
-from .database import Base
+from database import Base
 
-class employee(Base):
+class Employee(Base):
     __tablename__ = "employee"
 
     id = Column(Integer, primary_key=True, index=True)
